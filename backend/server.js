@@ -73,7 +73,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 app.use('/api/auth' , authRoutes)
 app.use('/api/message' ,messgeRoutes )
-
+app.get('/',(req , res) =>{
+    console.log('server is running sdfhjskdfnjsdk')
+})
 server.listen(3000 , () =>{
     console.log('server is runninng....')
 })
