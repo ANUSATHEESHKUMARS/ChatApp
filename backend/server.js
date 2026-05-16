@@ -73,9 +73,12 @@ app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 app.use('/api/auth' , authRoutes)
 app.use('/api/message' ,messgeRoutes )
-app.get('/',(req , res) =>{
-    console.log('server is running sdfhjskdfnjsdk')
+
+ app.get('/', (req, res) => {
+    res.send('Backend is running ')
 })
-server.listen(3000 , () =>{
+
+const PORT = process.env.PORT || 3000
+server.listen(PORT , () =>{
     console.log('server is runninng....')
 })
