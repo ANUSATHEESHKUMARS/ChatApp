@@ -3,7 +3,7 @@ import { io } from 'socket.io-client'
 import { GetUser, GetMessages, LogoutApi } from "../service/Auth.api"
 import { useNavigate } from "react-router-dom"
 
-const socket = io('http://localhost:3000')
+const socket = io('https://chatapp-g0f6.onrender.com')
 
 export default function Chat() {
 
