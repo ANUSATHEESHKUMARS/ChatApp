@@ -8,7 +8,7 @@ export const RegisterApi = async (data) => {
 
     const response = await axios.post(
 
-       `${BASE_URL}/api/auth/signup`,,
+       `${BASE_URL}/api/auth/signup`,
 
         data
 
