@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# env files
+.env
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+
+# vscode
+.vscode/
+
+# coverage
+coverage/
+
+# package manager cache
+.pnpm-store/
+
+# vite
+vite.svg
+
+

@@ -43,11 +43,15 @@ export const SaveMessage = async (data) => {
 }
 
 export const GetMessages = async (receiverId) => {
+
     const response = await axios.get(`http://localhost:3000/api/message/${receiverId}`)
+
     return response.data
 }
 
 export const LogoutApi = async () => {
+
     const response = await axios.post('http://localhost:3000/api/auth/logout')
+
     return response.data
-}
+}   
